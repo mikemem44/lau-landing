@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import { cn } from "@/utils/twUtils";
 import "@/styles/globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -23,7 +24,7 @@ type RootLayoutProps = {
 const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
   return (
     <html lang="es">
-      <body className={dm_sans.className}>
+      <body className={cn("bg-background grid grid-cols-1 w-full light", dm_sans.className)}>
         <Header></Header>
         <Main>
           {children}
