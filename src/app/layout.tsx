@@ -24,12 +24,12 @@ type RootLayoutProps = {
 const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
   return (
     <html lang="es">
-      <body className={cn("bg-background grid grid-cols-1 w-full light", dm_sans.className)}>
-        <Header></Header>
+      <body className={cn("bg-background grid grid-cols-1 gap-y-5 w-full light", dm_sans.className)}>
+        <Header />
         <Main>
           {children}
         </Main>
-        <Footer></Footer>
+        <Footer />
       </body>
     </html>
   );
