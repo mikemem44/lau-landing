@@ -24,7 +24,7 @@ type RootLayoutProps = {
 const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
   return (
     <html lang="es">
-      <body className={cn("bg-background grid grid-cols-1 gap-y-5 w-full light", dm_sans.className)}>
+      <body className={cn("bg-background grid grid-cols-1 gap-y-5 w-full light overflow-x-hidden", dm_sans.className)}>
         <Header />
         <Main>
           {children}
