@@ -4,7 +4,7 @@ export interface skipLinksType {
 }
 
 export const skipLinks: skipLinksType[] = [
-    {slug: "home", label: "inicio"},
+    {slug: "home", label: "Inicio"},
     {slug: "gallery", label: "Galeria"},
     {slug: "about", label: "Sobre Mi"},
     {slug: "contact", label: "Contáctame"}

@@ -1,4 +1,6 @@
+import Gallery from '@/components/gallery/Gallery';
 import Image from 'next/image'
+import { Suspense } from 'react';
 
 const Home = () => {
   return (
@@ -20,8 +22,13 @@ const Home = () => {
             </div>
           </aside>
         </div>
+
+        <Suspense>
+          <Gallery />
+        </Suspense>
     </div>
   
+    
 
 
   );
