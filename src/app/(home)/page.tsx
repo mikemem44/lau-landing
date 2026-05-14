@@ -5,7 +5,7 @@ import { Suspense } from 'react';
 const Home = () => {
   return (
     <div className="grid grid-cols-1 gap-y-20 mx-20">
-      <div id="home" className="flex items-center justify-between ">
+      <div id="home" className="animate-fade-in-up delay-200 flex items-center justify-between ">
           <section className="grid grid-cols-1 gap-y-4">
             <h2 className="font-bold italic text-4xl">Lorem Ipsum</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
