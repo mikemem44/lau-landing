@@ -1,6 +1,6 @@
 "use client"
 
-import { skipLinks } from "@/types/skipLinks";
+import { skipLinks } from "@/common/types/skipLinks";
 import { useState } from "react";
 import { Menu, X } from 'lucide-react';
 import { cn } from "@/utils/twUtils";

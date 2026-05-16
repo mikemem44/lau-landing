@@ -6,22 +6,24 @@ import { ImageData } from "@/common/types/imageData";
 import { axiosClient } from "@/libs/axiosClient";
 import { API_ENDPOINTS } from "@/common/apiConstants";
 
-const useImages = () => {
-    const [ images, setImages ] = useState<ImageData[]>([]);
+
+const useImageKey = (key: string) => {
+    const [ imageByKey, setImageByKey ] = useState<ImageData | null>(null);
     const [ isLoading, setIsLoading ] = useState<boolean>(false);
 
     useEffect(() => {
         const getImages = async () => {
             try{
                 setIsLoading(true);
-                const response = await axiosClient.get<ImageData[]>(API_ENDPOINTS.GET_IMAGES);
+                const response = await axiosClient.get<ImageData>(API_ENDPOINTS.GET_IMAGE_BY_KEY(key));
 
                 if(response.status !== 200) {
                     toast.error("Failed to fetch images");
                     return;
                 }
 
-                setImages(response.data);
+                setImageByKey(response.data);
+                
             } catch (error) {
                 toast.error("Failed to fetch images", {
                     description: error instanceof Error ? error.message : "Unknown error"
@@ -32,9 +34,9 @@ const useImages = () => {
         };
 
         getImages();
-    }, [])
+    }, [key])
 
-    return { images, isLoading };
+    return { imageByKey, isLoading };
 }
 
-export default useImages;
+export default useImageKey;

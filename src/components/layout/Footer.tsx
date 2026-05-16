@@ -1,4 +1,4 @@
-import { skipLinks } from "@/types/skipLinks";
+import { skipLinks } from "@/common/types/skipLinks";
 
 const Footer = () => {
     
