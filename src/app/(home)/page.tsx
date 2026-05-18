@@ -3,6 +3,7 @@ import About from '@/components/layout/main/About';
 import Image from 'next/image'
 import { Suspense } from 'react';
 import Link from 'next/link';
+import ContactMe from '@/components/layout/main/ContactMe';
 
 const Home = () => {
   return (
@@ -43,6 +44,8 @@ const Home = () => {
         </Suspense>
 
         <About />
+
+        <ContactMe />
     </div>
   
     
