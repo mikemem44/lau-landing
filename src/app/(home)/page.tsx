@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Suspense } from 'react';
 import Link from 'next/link';
 import ContactMe from '@/components/layout/main/ContactMe';
+import Loading from '@/components/ui/Loading';
 
 const Home = () => {
   return (
@@ -11,8 +12,9 @@ const Home = () => {
       <div id="home" className="grid grid-cols-1 gap-y-6 md:gap-y-1 md:flex md:items-center md:justify-between ">
         
           <section className="animate-fade-in-up md:animate-fade-in-right delay-200 grid grid-cols-1 gap-y-4">
-            <h2 className="font-bold text-4xl">Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            <h2 className="font-bold text-4xl md:text-5xl">Lorem Ipsum</h2>
+            <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+
             <div className="hidden md:flex mt-6 gap-x-6">
               <Link href="#gallery" className="uppercase border border-border p-3 rounded-xl text-foreground hover:bg-accent hover:text-accent-foreground transition duration-200">Mi trabajo</Link>
               <Link href="#about" className="uppercase border border-border p-3 rounded-xl text-foreground hover:bg-accent hover:text-accent-foreground transition duration-200">Sobre mi</Link>
@@ -39,7 +41,7 @@ const Home = () => {
           </div>
         </div>
 
-        <Suspense>
+        <Suspense fallback={<Loading />}>
           <Gallery />
         </Suspense>
 

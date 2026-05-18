@@ -23,7 +23,7 @@ type RootLayoutProps = {
 
 const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
   return (
-    <html lang="es">
+    <html lang="es" className="scroll-smooth">
       <body className={cn("bg-background grid grid-cols-1 gap-y-5 w-full light overflow-x-hidden", dm_sans.className)}>
         <Header />
         <Main>

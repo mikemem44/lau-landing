@@ -6,7 +6,7 @@ const About = () => {
         <div id="about" className="border border-border w-full flex bg-accent p-10 rounded-2xl">
             <div className="md:m-20">
                 <h2 className="text-4xl">Sobre mi</h2>
-                <p className="mt-6 md:mt-10 text-muted-foreground ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum arcu a est scelerisque facilisis. Quisque ut purus eget neque malesuada mattis ac ac sapien. Nullam egestas sapien sed varius ultricies. Suspendisse potenti. Duis id arcu tempor, tincidunt tortor vel, laoreet ligula. Pellentesque tempor velit eget velit finibus lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc vitae tellus non purus molestie porta.</p>
+                <p className="mt-6 md:mt-10 text-xl text-muted-foreground ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum arcu a est scelerisque facilisis. Quisque ut purus eget neque malesuada mattis ac ac sapien. Nullam egestas sapien sed varius ultricies. Suspendisse potenti. Duis id arcu tempor, tincidunt tortor vel, laoreet ligula. Pellentesque tempor velit eget velit finibus lobortis. </p>
             </div>
             
             <Image 
