@@ -2,10 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
-import { ImageData } from "@/types/imageData";
-import axios from "axios";
-
-const WORKER_URL = process.env.NEXT_PUBLIC_WORKER_URL;
+import { ImageData } from "@/common/types/ImageData";
+import { axiosClient } from "@/libs/axiosClient";
+import { API_ENDPOINTS } from "@/common/apiConstants";
 
 const useImages = () => {
     const [ images, setImages ] = useState<ImageData[]>([]);
@@ -15,7 +14,7 @@ const useImages = () => {
         const getImages = async () => {
             try{
                 setIsLoading(true);
-                const response = await axios.get<ImageData[]>(`${WORKER_URL}api/images`);
+                const response = await axiosClient.get<ImageData[]>(API_ENDPOINTS.GET_IMAGES);
 
                 if(response.status !== 200) {
                     toast.error("Failed to fetch images");
@@ -34,7 +33,7 @@ const useImages = () => {
 
         getImages();
     }, [])
-
+    
     return { images, isLoading };
 }
 
