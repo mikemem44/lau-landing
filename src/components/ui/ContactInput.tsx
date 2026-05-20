@@ -5,7 +5,7 @@ type InputProps = React.InputHTMLAttributes<HTMLInputElement>
 
 type TextareaProps = React.TextareaHTMLAttributes<HTMLTextAreaElement>
 
-const inputStyle: string = "focus:outline-none font-normal w-full border border-border bg-input rounded-md p-0.5";
+const inputStyle: string = "bg-background border-border focus:border-accent";
 
 export const ContactInput: FC<InputProps> = ({className,...props}: InputProps) => {
     return (

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
-import { ImageData } from "@/common/types/imageData";
+import { ImageData } from "@/common/types/ImageData";
 import { axiosClient } from "@/libs/axiosClient";
 import { API_ENDPOINTS } from "@/common/apiConstants";
 

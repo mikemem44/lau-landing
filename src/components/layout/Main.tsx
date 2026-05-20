@@ -6,7 +6,7 @@ type MainProps = {
 
 const Main: FC<Readonly<MainProps>> = ({ children }) => {
     return (
-        <main className="mx-6 md:mx-20 py-6">{children}</main>
+        <main className="py-6">{children}</main>
     )
 }
 
