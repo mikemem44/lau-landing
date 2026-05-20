@@ -4,8 +4,6 @@ import { skipLinks } from "@/common/types/skipLinks";
 import { useState } from "react";
 import { Menu, X } from 'lucide-react';
 import { cn } from "@/utils/twUtils";
-import Link from "next/link";
-
 const Header = () => {
 const [ isOpen, setIsOpen ] = useState<boolean>(false);
 
@@ -13,9 +11,9 @@ const [ isOpen, setIsOpen ] = useState<boolean>(false);
         <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
             <nav className="max-w-full outline mx-auto px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    <Link href="#home">
+                    <a href="#home">
                         <h1 className="font-serif tracking-wide text-center text-sidebar-foreground md:text-start text-xl hover:text-sidebar-accent-foreground ease-in-out transition duration-200">Laura Zambrano</h1>
-                    </Link>
+                    </a>
 
                     {/* Desktop */}
                     <ul className="hidden md:flex items-center gap-6">

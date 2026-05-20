@@ -13,10 +13,10 @@ const Hero = () => {
                         Artista Visual Contemporánea
                         </p>
                         <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight text-balance">
-                        Explorando los límites de la abstracción y la emoción
+                        Explorando los límites de la imaginación y la percepción
                         </h1>
                         <p className="text-muted-foreground text-lg leading-relaxed max-w-lg">
-                        A través de obras de técnica mixta, investigo la intersección del color, la textura y la experiencia humana. Cada pieza es un diálogo entre lo consciente y lo inconsciente.
+                        A través del surrealismo y la exploración conceptual, mis obras combinan perspectiva, atmósfera e imaginación para dar vida a escenas que habitan entre lo real y lo onírico. 
                         </p>
                         <div className="flex gap-4 pt-4">
                             <Link
@@ -38,7 +38,7 @@ const Hero = () => {
                     <div className="lg:order-2">
                         <div className="relative aspect-4/5 overflow-hidden">
                             <Image
-                                src="https://r2-worker.mikelmm1999.workers.dev/00-portrait.webp"
+                                src="https://r2-worker.mikelmm1999.workers.dev/08-portrait.webp"
                                 alt="Featured artwork - Abstract expressionist oil painting"
                                 fill
                                 className="object-cover"
