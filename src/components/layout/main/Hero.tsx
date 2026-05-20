@@ -38,11 +38,12 @@ const Hero = () => {
                     <div className="lg:order-2">
                         <div className="relative aspect-4/5 overflow-hidden">
                             <Image
-                                src="https://r2-worker.mikelmm1999.workers.dev/06-portrait.jpeg"
+                                src="https://r2-worker.mikelmm1999.workers.dev/00-portrait.webp"
                                 alt="Featured artwork - Abstract expressionist oil painting"
                                 fill
                                 className="object-cover"
-                                priority
+                                loading="eager"
+                                fetchPriority="high"
                                 sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                             <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />

@@ -18,7 +18,7 @@ const Gallery = () => {
         isLoading ? <Loading></Loading> :
         images?.length === 0 ? <div className="text-center text-2xl font-bold"></div> :
 
-        <section id="work" className="py-24 lg:py-32">
+        <section id="gallery" className="py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-12 lg:mb-16">

@@ -33,7 +33,7 @@ const useImages = () => {
 
         getImages();
     }, [])
-
+    
     return { images, isLoading };
 }
 
