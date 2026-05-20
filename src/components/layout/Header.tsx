@@ -13,7 +13,7 @@ const [ isOpen, setIsOpen ] = useState<boolean>(false);
         <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
             <nav className="max-w-full outline mx-auto px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    <Link href="/">
+                    <Link href="#home">
                         <h1 className="font-serif tracking-wide text-center text-sidebar-foreground md:text-start text-xl hover:text-sidebar-accent-foreground ease-in-out transition duration-200">Laura Zambrano</h1>
                     </Link>
 
